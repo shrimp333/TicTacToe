@@ -26,6 +26,9 @@ button.onBoard:hover{
 .space{
     display: flex;
 }
+#condition{
+    margin: 0;
+}
 .reset{
     height: max-content;
     padding: 1rem;
@@ -37,4 +40,22 @@ button.onBoard:hover{
 .reset:hover{
     cursor: pointer;
     background-color: rgb(0, 92, 92);
+}
+@media (max-width: 750px){
+    .board{
+        width: 300px;
+        height: 300px;
+    }
+    .place{
+        width: 100px;
+        height: 100px;
+    }
+    button.onBoard{
+        width: 100px;
+        height: 100px;
+        font-size: 5rem;
+    }
+    .space{
+        display: block;
+    }
 }
