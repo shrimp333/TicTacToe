@@ -36,6 +36,7 @@ checkCondition = () => {
         if (document.getElementById(`button${winConditions[i][0]}`).innerHTML == document.getElementById(`button${winConditions[i][1]}`).innerHTML && document.getElementById(`button${winConditions[i][0]}`).innerHTML == document.getElementById(`button${winConditions[i][2]}`).innerHTML && document.getElementById(`button${winConditions[i][0]}`).innerHTML != '') {
             playing = false;
             conditionHeader.innerHTML = `${document.getElementById(`button${winConditions[i][0]}`).innerHTML} has won`
+            return;
         }
     }
 
