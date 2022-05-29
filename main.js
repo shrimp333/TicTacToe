@@ -44,10 +44,8 @@ checkCondition = () => {
     let isPlay = new Array(9).fill(true);
     for (i = 1; i <= 9; i++) {
         const toCheck = document.getElementById(`button${i}`);
-        if (toCheck.innerHTML != '') {
+        if (toCheck.innerHTML != '')
             isPlay[i] = false;
-            console.log(isPlay[i])
-        }
     }
     if (!isPlay.every(Boolean) && amountClicked == 9) {
         conditionHeader.innerHTML = "Draw";

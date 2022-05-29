@@ -30,6 +30,7 @@ button.onBoard:hover{
     margin: 0;
 }
 .reset{
+    margin-top: 10px;
     height: max-content;
     padding: 1rem;
     border: 0;
